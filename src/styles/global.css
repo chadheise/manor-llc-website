@@ -1,0 +1,19 @@
+html {
+    background-color: #d6c72a;
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+ 
+body {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.appIcon {
+    width: 100;
+    border-radius: 20;
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from "react-helmet"
 import { graphql } from 'gatsby'
 
 import AppIcon from '../components/appIcon'
@@ -12,6 +13,11 @@ const IndexPage = ({ data }) => {
   return(
     <Layout>
       <SEO title="Home" keywords={[`manor`, `manor llc`, `pace calc`, 'pace-calc', 'quick-pace-calc']} />
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Manor LLC</title>
+          <link rel="canonical" href="http://manorllc.com" />
+      </Helmet>
       <p>Welcome to the home of Manor LLC software development!</p>
       <p>Checkout one of our projects using the links below.</p>
       <AppIcon fluid={data.paceCalcIcon.childImageSharp.fluid} name="Quick Pace Calc"/>

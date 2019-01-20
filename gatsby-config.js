@@ -35,5 +35,6 @@ module.exports = {
         icon: `src/images/pace-calc-icon.png`,
       },
     },
+    'gatsby-plugin-offline'
   ],
 }

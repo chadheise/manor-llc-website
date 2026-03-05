@@ -1,44 +1,14 @@
 {
-  "name": "manor-llc",
-  "private": true,
-  "description": "Website for Manor LLC",
-  "version": "0.1.0",
-  "author": "Chad Heise",
-  "dependencies": {
-    "gatsby": "^5.8.1",
-    "gatsby-image": "^2.0.26",
-    "gatsby-plugin-manifest": "^2.0.13",
-    "gatsby-plugin-offline": "^2.0.21",
-    "gatsby-plugin-react-helmet": "^3.0.5",
-    "gatsby-plugin-sharp": "^5.8.1",
-    "gatsby-source-filesystem": "^2.11.1",
-    "gatsby-transformer-remark": "^6.8.0",
-    "gatsby-transformer-sharp": "^2.1.10",
-    "prop-types": "^15.6.2",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-helmet": "^5.2.0",
-    "sharp": "^0.30.5"
-  },
-  "keywords": [
-    "gatsby",
-    "Manor LLC"
-  ],
+  "name": "manor_llc",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
-    "format": "prettier --write \"src/**/*.js\"",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "devDependencies": {
-    "prettier": "^1.15.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/chadheise/manor-llc-website"
-  },
-  "bugs": {
-    "url": "https://github.com/chadheise/manor-llc-website/issues"
+  "dependencies": {
+    "astro": "^5.17.1"
   }
 }

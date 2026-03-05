@@ -1,6 +1,5 @@
 ---
-path: "/paceCalc/privacyPolicy"
-date: "2010-01-05"
+layout: ../../components/Layout.astro
 title: "Quick Pace Calc Privacy Policy"
 ---
 

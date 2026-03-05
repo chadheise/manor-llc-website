@@ -1,19 +1,128 @@
+/* Global styles for Manor LLC website */
+
+:root {
+  --primary-color: #d6c72a;
+  --secondary-color: #282828;
+  --text-color: #282828;
+  --background-color: #d6c72a;
+  --header-bg: #282828;
+  --header-text: white;
+  --font-family: 'DM Sans', sans-serif;
+  --font-family-heading: 'Space Grotesk', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 html {
-    background-color: #d6c72a;
-    font-family: sans-serif;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
- 
+
 body {
-    margin: 0;
+  margin: 0;
+  line-height: 1.6;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-h1 {
-    margin: 0;
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: var(--font-family-heading);
+  font-weight: 700;
 }
 
-.appIcon {
-    width: 100;
-    border-radius: 20;
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.app-icon {
+  width: 100px;
+  border-radius: 20px;
+}
+
+.content-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(1rem, 4vw, 2rem);
+  background: linear-gradient(135deg, #f0e68c 0%, #fffacd 100%);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.site-header {
+  background-color: var(--header-bg);
+  margin: 0;
+}
+
+.site-nav {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+}
+
+.site-nav-title {
+  color: var(--header-text);
+  font-family: var(--font-family-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.site-nav-title:hover {
+  text-decoration: none;
+}
+
+.site-nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.site-nav-links a {
+  color: var(--header-text);
+  font-family: var(--font-family-heading);
+  text-decoration: none;
+  font-size: 0.95rem;
+  opacity: 0.85;
+  transition: opacity 0.15s;
+}
+
+.site-nav-links a:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+  border-top: 1px solid rgba(40, 40, 40, 0.1);
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+  font-weight: 400;
 }

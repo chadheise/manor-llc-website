@@ -1,0 +1,13 @@
+---
+const { siteTitle } = Astro.props
+---
+
+<header class="site-header">
+  <nav class="site-nav">
+    <a href="/" class="site-nav-title">{siteTitle}</a>
+    <ul class="site-nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/pace-calc">Quick Pace Calc</a></li>
+    </ul>
+  </nav>
+</header>

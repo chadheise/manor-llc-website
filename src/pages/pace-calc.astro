@@ -1,0 +1,65 @@
+---
+import Layout from '../components/Layout.astro'
+---
+
+<Layout title="Quick Pace Calc">
+  <div class="page-header">
+    <div class="page-title">
+      <img src="/pace-calc-icon.png" alt="Quick Pace Calc" class="app-icon" />
+      <h1>Quick Pace Calc</h1>
+    </div>
+    <ul class="header-links">
+      <li><a href="https://github.com/chadheise/pace-calc">Source (GitHub)</a></li>
+      <li><a href="https://github.com/chadheise/pace-calc/issues">Support</a></li>
+      <li><a href="/pace-calc/privacy-policy">Privacy Policy</a></li>
+    </ul>
+  </div>
+  <p>
+    Quick Pace Calc is an iOS app that allows you to easily convert running
+    times to a variety of formats.
+  </p>
+  <p>
+    For example, if you ran 5.3 miles in 46 min and 37 sec, Quick Pace Calc will
+    quickly show you pace in min/mile and min/km as well as how long it would
+    take you to complete common race distances at that pace such as 5k, 10k and
+    more!
+  </p>
+  <h2>Screenshots</h2>
+  <div class="screenshot-container">
+    <img src="/pace-calc-screenshot.png" alt="Quick Pace Calc screenshot" />
+  </div>
+</Layout>
+
+<style>
+  .page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+
+  .page-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .header-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.25rem;
+    font-size: 0.9rem;
+  }
+
+  .screenshot-container {
+    max-width: 400px;
+  }
+  .screenshot-container img {
+    width: 100%;
+    height: auto;
+  }
+</style>
